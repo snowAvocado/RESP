@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/snowAvocado/resp/types"
+	"github.com/snowAvocado/resp/src/types"
 )
 
 // // test that verifies Encodes & Decodes SimpleString
@@ -26,7 +26,7 @@ import (
 func TestEncodeDecodeSimpleString(t *testing.T) {
 	var ssp types.SimpleStringP
 
-	sstype, _ := ssp.decode([]byte("+HELLO\r\n"))
+	sstype, _ := ssp.Decode([]byte("+HELLO\r\n"))
 	ss, ok := sstype.(SimpleString)
 	if ok && ss.data != "HELLO" {
 		t.Errorf("decode simple string failed")

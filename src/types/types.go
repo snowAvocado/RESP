@@ -22,7 +22,7 @@ type SimpleStringP struct {
 }
 
 type Protocol interface {
-	decode([]byte) (datatype, error)
+	Decode([]byte) (datatype, error)
 	encode(datatype) ([]byte, error)
 }
 
