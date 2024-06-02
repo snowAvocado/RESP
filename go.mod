@@ -1,3 +1,3 @@
-module github.com/snowAvocado/RESP
+module github.com/snowAvocado/resp
 
 go 1.20

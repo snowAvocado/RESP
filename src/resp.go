@@ -1,4 +1,4 @@
-package RESP
+package resp
 
 import (
 	"errors"

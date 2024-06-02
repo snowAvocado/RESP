@@ -1,2 +1,2 @@
 # RESP
-Redis serialization protocol (RESP)  written in Golang Programming language
+Redis serialization protocol (RESP)  written in Go Programming language
