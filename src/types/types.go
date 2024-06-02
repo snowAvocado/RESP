@@ -26,7 +26,7 @@ type Protocol interface {
 	encode(datatype) ([]byte, error)
 }
 
-func (r SimpleStringP) decode(bytes []byte) (datatype, error) {
+func (r SimpleStringP) Decode(bytes []byte) (datatype, error) {
 	var ss SimpleString
 	i := 1
 	for i < len(bytes) {
