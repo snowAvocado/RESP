@@ -1,2 +1,4 @@
-github.com/snowAvocado/resp/src/types v0.0.0-20240602181314-75271a34745b h1:Lxy1lsp2pjc/MkQQGD96i6GDkBBoMxog1cTud8c8GoA=
-github.com/snowAvocado/resp/src/types v0.0.0-20240602181314-75271a34745b/go.mod h1:CAikpcRhTkaYWxTWW9xBPY24B9jSTgY2ezV+3a014Ig=
+github.com/snowAvocado/resp/src/types v0.0.0-20240602181627-995550e66c55 h1:2GoW4bgmYo2Lg31JNQ7+vuTRGXhKeOd/IAMstWF1Dno=
+github.com/snowAvocado/resp/src/types v0.0.0-20240602181627-995550e66c55/go.mod h1:CAikpcRhTkaYWxTWW9xBPY24B9jSTgY2ezV+3a014Ig=
+github.com/snowAvocado/resp/src/types v0.0.0-20240603053627-6ea178dd2208 h1:qWN6MvtRnCQI0sLWPH0EJAFuyWIXQRIKMutm++lOFw4=
+github.com/snowAvocado/resp/src/types v0.0.0-20240603053627-6ea178dd2208/go.mod h1:CAikpcRhTkaYWxTWW9xBPY24B9jSTgY2ezV+3a014Ig=

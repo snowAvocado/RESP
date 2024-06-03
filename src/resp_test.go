@@ -27,7 +27,7 @@ func TestEncodeDecodeSimpleString(t *testing.T) {
 	var ssp types.SimpleStringP
 
 	sstype, _ := ssp.Decode([]byte("+HELLO\r\n"))
-	ss, ok := sstype.(SimpleString)
+	ss, ok := sstype.(types.SimpleString)
 	if ok && ss.data != "HELLO" {
 		t.Errorf("decode simple string failed")
 	}
