@@ -10,11 +10,11 @@ type datatype interface {
 }
 
 type SimpleString struct {
-	data string
+	Data string
 }
 
 func (ss SimpleString) PrintData() {
-	fmt.Printf("type %T, data %v", ss.data, ss.data)
+	fmt.Printf("type %T, data %v", ss.Data, ss.Data)
 
 }
 
@@ -41,6 +41,6 @@ func (r SimpleStringP) Decode(bytes []byte) (datatype, error) {
 		}
 		i++
 	}
-	ss.data = string(bytes[1:i])
+	ss.Data = string(bytes[1:i])
 	return ss, nil
 }
