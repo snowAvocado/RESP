@@ -1,5 +1,5 @@
 # RESP
-Redis serialization protocol (RESP)  written in Go Programming language
+Redis serialization protocol [RESP](https://redis.io/docs/latest/develop/reference/protocol-spec/ ) written in Go Programming language
  
 Redis serialization protocol (RESP) is the wire protocol that clients implement
 To communicate with the Redis server, Redis clients use a protocol called Redis Serialization Protocol (RESP).
@@ -58,4 +58,4 @@ The following table summarizes the RESP data types that Redis supports:
 |Sets|RESP3|Aggregate|~|
 |Pushes|RESP3|Aggregate|>|
  
- this implementation i.e resp go pkg can encode and decode redis strings to go defined types.
+ the current implementation of resp go pkg can serialize all above go defined types to bytes and can deserialize from bytes to above defined types in go.
