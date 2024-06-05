@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/snowAvocado/resp/src/types"
+	"github.com/snowAvocado/resp/types"
 )
 
 // // test that verifies Encodes & Decodes SimpleString

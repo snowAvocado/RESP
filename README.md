@@ -58,16 +58,4 @@ The following table summarizes the RESP data types that Redis supports:
 |Sets|RESP3|Aggregate|~|
 |Pushes|RESP3|Aggregate|>|
  
-# Example Usage
- 
-```
-// test that verifies Encodes & Decodes verbatim String data type
-func TestEncodeDecodeVerbatimString(t *testing.T) {
-    vs, _ := DecodeVerbatimString([]byte("=15\r\ntxt:Some string\r\n"))
-    if vs.data != "Some string" && vs.len == 15 && vs.encoding == "txt" {
-        t.Errorf("decode verbatim String failed")
-    }
- 
-}
- 
-```
+ this implementation i.e resp go pkg can encode and decode redis strings to go defined types.
