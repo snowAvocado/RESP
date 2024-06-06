@@ -14,8 +14,6 @@ RESP can serialize different data types including integers, strings, and arrays.
  
 RESP is binary-safe and uses prefixed length to transfer bulk data so it does not require processing bulk data transferred from one process to another.
  
-the current RESP implementation can be used in a golang Redis client.
- 
 
 # RESP protocol description
 RESP is essentially a serialization protocol that supports several data types. In RESP, the first byte of data determines its type.
