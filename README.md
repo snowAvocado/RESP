@@ -10,18 +10,14 @@ RESP is a compromise among the following considerations:
 Simple to implement.
 Fast to parse.
 Human readable.
-RESP can serialize different data types including integers, strings, and arrays. It also features an error-specific type. A client sends a request to the Redis server as an array of strings. The array's contents are the command and its arguments that the server should execute. The server's reply type is command-specific.
+RESP can serialize different data types including integers, strings, and arrays. It also features an error-specific type.
  
 RESP is binary-safe and uses prefixed length to transfer bulk data so it does not require processing bulk data transferred from one process to another.
  
 
 # RESP protocol description
 RESP is essentially a serialization protocol that supports several data types. In RESP, the first byte of data determines its type.
- 
-Redis generally uses RESP as a request-response protocol in the following way:
- 
-Clients send commands to a Redis server as an array of bulk strings. The first (and sometimes also the second) bulk string in the array is the command's name. Subsequent elements of the array are the arguments for the command.
- 
+  
 RESP is a binary protocol that uses control sequences encoded in standard ASCII. The A character, for example, is encoded with the binary byte of value 65. Similarly, the characters CR (\r), LF (\n) and SP ( ) have binary byte values of 13, 10 and 32, respectively.
  
 The \r\n (CRLF) is the protocol's terminator, which always separates its parts.
@@ -56,4 +52,3 @@ The following table summarizes the RESP data types that Redis supports:
 |Sets|RESP3|Aggregate|~|
 |Pushes|RESP3|Aggregate|>|
  
- the current implementation of resp go pkg can serialize all above go defined types to bytes and can deserialize from bytes to above defined types in go.
